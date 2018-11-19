@@ -34,7 +34,8 @@ Copy the following into your Hugo site's directory:
 
 # Aside:
 =======
- ** if you run into css issues, you could add a custom css as well. A sample of how to do that is added in `samples` directory.
- ** if your spec is not local to your server hosting the page or the server hosting the spec is not sending CORS headers, you may want to use a CORS proxy like `cors anywhere`
+
+ * if you run into css issues, you could add a custom css as well. A sample of how to do that is added in `samples` directory.
+ * if your spec is not local to your server hosting the page or the server hosting the spec is not sending CORS headers, you may want to use a CORS proxy like `cors anywhere`
 
 
