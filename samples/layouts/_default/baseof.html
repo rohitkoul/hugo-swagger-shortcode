@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+<head>
+
+<link href="{{ "/css/swagger-css/swagger-ui.css" | relURL }}" rel="stylesheet" type="text/css">
+  
+  {{ if and (isset .Params "customcss") .Params.customcss }}
+       {{ if (isset .Params "customcssfile") }}
+       <link href="{{ printf "/css/%s" $.Params.customcssfile    | relURL }}" rel="stylesheet" type="text/css">
+       {{ else }}
+       <link href="{{ "/css/custom.css" | relURL }}" rel="stylesheet" type="text/css">
+       {{ end }}
+   {{end}}
+
+</head>
