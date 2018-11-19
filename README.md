@@ -1,7 +1,7 @@
 # hugo-swagger-shortcode
 ========================
 
-A [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) to embed the Swagger Spec in a page. This site is based on [swagger yaml tp html](https://gist.github.com/oseiskar/dbd51a3727fc96dcf5ed189fca491fb3) python script.
+A [Hugo Shortcode](https://gohugo.io/extras/shortcodes/) to embed the Swagger Spec in a page. This repo is based on [swagger yaml tp html](https://gist.github.com/oseiskar/dbd51a3727fc96dcf5ed189fca491fb3) python script.
 
 # Setup
 ========
@@ -14,7 +14,10 @@ Copy the following into your Hugo site's directory:
 
 # Usage
 =======
-* Add `swagger-css/swagger-ui.css` to your site, e.g to your `layout/default/_baseof.html`
+* Add `swagger-css/swagger-ui.css` to your site, e.g to your `layout/_default/baseof.html`
+```
+<link href="{{ "/css/swagger-css/swagger-ui.css" | relURL }}" rel="stylesheet" type="text/css">
+```
 * To embed the API documentation do the following:
 
 ```go
@@ -29,6 +32,9 @@ Copy the following into your Hugo site's directory:
 
 ```
 
-* NOTE: if you run into css issues, you could add a custom css as well. A sample of how to do that is added in `samples` directory. 
+# Aside:
+=======
+ ** if you run into css issues, you could add a custom css as well. A sample of how to do that is added in `samples` directory.
+ ** if your spec is not local to your server hosting the page or the server hosting the spec is not sending CORS headers, you may want to use a CORS proxy like `cors anywhere`
 
 
